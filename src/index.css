@@ -1,3 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+  body {
+    background-color: #24292f;
+    color: #fff6f6;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  section {
+    padding: 0 2.75rem;
+  }
+}
+
+a.active {
+  @apply text-blue-light hover:text-blue-light before:content-['<'] after:content-['>'];
+}
+
+a[href="#mailme"] {
+  @apply p-2 bg-blue-soft rounded-full hover:shadow-md hover:shadow-blue-soft;
+}
+
+a[href="#mailme"]:hover svg {
+  @apply fill-blue transition-colors;
+}
+
+#proyect:hover > div {
+  @apply opacity-100 bg-[rgba(0,0,0,0.8)];
+}
+
+.rotate {
+  animation: rotate 30s linear infinite;
+}
+
+.rotate > * {
+  animation: rotate2 30s linear infinite;
+}
+
+.rotate::before {
+  animation: img 30s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+
+  50% {
+    transform: rotate(-180deg) scale(0.6);
+  }
+
+  100% {
+    transform: rotate(-360deg) scale(1);
+  }
+}
+
+@keyframes img {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
