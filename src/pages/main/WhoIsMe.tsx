@@ -6,7 +6,7 @@ import DownloadButton from '../../components/button/DownloadButton'
 
 const WhoIsMe: React.FC = () => {
   return (
-    <section className='w-full h-[600px] pt-10 flex overflow-hidden shadow-md'>
+    <section className='w-full h-[600px] pt-10 flex overflow-hidden shadow-md' id='home'>
       <div className='text-night-soft w-3/4'>
         <div className='flex flex-col'>
           <span>{'</html>'}</span>

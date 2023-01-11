@@ -13,7 +13,18 @@ module.exports = {
         night: '#24292f',
         night2: '#2d2e32',
         'night-light': '#363a3e',
-        'night-soft': '#4c4d50'
+        'night-soft': '#4c4d50',
+        contact: '#011627',
+        inputs: '#011221',
+        'input-b': '#1E2D3D',
+        'label': '#607B96',
+        'input-text': '#465E77',
+        'btn': '#1C2B3A',
+        'wordR': '#C98BDF',
+        'var': '#5565E8',
+        'char': '#607B96',
+        'text': '#FEA55F'
+
       },
       backgroundImage: {
         wave: 'url(./src/assets/wave.png)',
