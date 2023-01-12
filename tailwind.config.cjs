@@ -43,6 +43,9 @@ module.exports = {
       fontFamily: {
         ubuntu: 'Ubuntu Mono',
       },
+      screens: {
+        mini: '280px'
+      }
     },
   },
   plugins: [],

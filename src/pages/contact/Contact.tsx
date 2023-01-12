@@ -22,9 +22,9 @@ const Contact: React.FC = () => {
   return (
     <section className='py-20 shadow-md bg-contact' id='contact'>
       <h1 className='text-center mb-10'>Contactame</h1>
-      <div className='w-full h-[700px] flex'>
+      <div className='w-full h-[700px] mini:grid lg:flex'>
         <Form handleEvent={handleChange} form={form} />
-        <div className='w-3/5 border-t border-r border-b border-input-b bg-contact relative'>
+        <div className='mini:w-[90%] mini:mx-auto mini:border-l lg:w-3/5 border-t border-r border-b border-input-b bg-contact relative'>
           <Code name={form.name ?? ''} email={form.email ?? ''} message={form.message ?? ''} />
         </div>
       </div>

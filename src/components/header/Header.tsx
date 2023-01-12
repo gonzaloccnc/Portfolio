@@ -4,7 +4,7 @@ import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
 const Header: React.FC = () => {
   return (
-    <header className='w-full flex items-center justify-around py-5 border-b border-night-light bg-night fixed z-50'>
+    <header className='mini:hidden lg:flex w-full items-center justify-around py-5 border-b border-night-light bg-night fixed z-50'>
       <div>
         <h1
           className='flex gap-3 text-2xl text-blue-light cursor-pointer'

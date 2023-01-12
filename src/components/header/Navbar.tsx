@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <nav className='flex gap-8 text-xl'>
+    <nav className='flex md:gap-4 xl:gap-8 md:text-base lg:text-lg xl:text-xl'>
       <a
         className='hover:text-blue-soft transition-all active'
         href='#home' onClick={effectScroll}>Inicio</a>
