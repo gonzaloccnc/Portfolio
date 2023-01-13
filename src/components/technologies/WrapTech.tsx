@@ -8,8 +8,8 @@ interface WrapTechProps {
 const WrapTech: React.FC<WrapTechProps> = ({ children, extraClass }) => {
   return (
     <div
-      className={`${extraClass} bg-night-light rounded-full grid place-content-center
-      grayscale-700`}
+      className={`${extraClass} dark:bg-night-light bg-blue-light rounded-full grid place-content-center
+      dark:grayscale-700 grayscale-500`}
     >
       {children}
     </div>

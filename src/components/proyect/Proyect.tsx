@@ -18,7 +18,7 @@ const Proyect: React.FC<ProyectProps> = ({ title, des, github, web, img }) => {
     >
       <div
         className='w-full h-full flex flex-col items-center justify-center mini:gap-1 lg:gap-5 opacity-0
-        transition-opacity duration-700 rounded-xl'>
+        transition-opacity duration-700 rounded-xl text-light'>
         <h1 className='mini:text-sm lg:text-2xl'>{title}</h1>
         <p
           className='mini:text-[8px] lg:text-base text-center mini:w.w-full lg:w-3/4 mx-auto minmd:text-xs'

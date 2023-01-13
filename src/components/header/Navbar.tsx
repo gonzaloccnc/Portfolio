@@ -51,8 +51,8 @@ const Navbar: React.FC<NavbarProps> = ({ hidden, handleShowBurger }) => {
 
   return (
     <nav
-      className={`${hidden ? 'mini:hidden' : 'mini:flex'} lg:w-auto lg:flex-row lg:flex mini:gap-4 xl:gap-8 
-      md:text-base lg:text-lg xl:text-xl mini:flex-col mini:w-full mini:items-center`}
+      className={`${hidden ? 'mini:hidden' : 'mini:flex'} lg:w-auto lg:flex-row lg:flex mini:gap-4 
+      xl:gap-8 md:text-base lg:text-lg xl:text-xl mini:flex-col mini:w-full mini:items-center`}
     >
       <a
         className='hover:text-blue-soft transition-all active mini:w-full mini:text-center lg:w-auto'

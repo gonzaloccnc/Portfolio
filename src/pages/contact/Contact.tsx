@@ -20,11 +20,14 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section className='py-20 shadow-md bg-contact' id='contact'>
+    <section className='py-20 shadow-md dark:bg-contact bg-blue' id='contact'>
       <h1 className='text-center mb-10'>Contactame</h1>
       <div className='w-full mini:h-[890px] minmd:h-[700px] mini:grid minmd:flex'>
         <Form handleEvent={handleChange} form={form} />
-        <div className='mini:w-[90%] mini:mx-auto mini:border-l minmd:w-3/5 border-t border-r border-b border-input-b bg-contact relative'>
+        <div
+          className='mini:w-[90%] mini:mx-auto mini:border-l minmd:w-3/5 border-t border-r border-b
+           border-input-b dark:bg-contact relative bg-blue'
+        >
           <Code name={form.name ?? ''} email={form.email ?? ''} message={form.message ?? ''} />
         </div>
       </div>

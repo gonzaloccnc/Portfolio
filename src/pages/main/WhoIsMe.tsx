@@ -18,7 +18,7 @@ const WhoIsMe: React.FC = () => {
           <span className='mini:h-3 lg:h-5'></span>
           <span className='mini:pl-3 lg:pl-8'>{'<h1>'}</span>
         </div>
-        <h1 className='flex flex-col font-bold mini:pl-5 lg:pl-12 text-white'>
+        <h1 className='flex flex-col font-bold mini:pl-5 lg:pl-12 dark:text-white text-night2'>
           <span className='lg:text-7xl minsm:text-4xl' >Hola</span>
           <span className='lg:text-7xl minsm:text-4xl' >Soy
             <span className='text-orange lg:text-7xl minsm:text-4xl'> Gonzalo</span>,
@@ -29,7 +29,7 @@ const WhoIsMe: React.FC = () => {
         </h1>
         <div className='mini:pl-3 lg:pl-8'>
           <span>{'<p>'}</span>
-          <p className='pl-3 mini:text-xs minsm:text-xl text-white'>desarollador front end.</p>
+          <p className='pl-3 mini:text-xs minsm:text-xl text-night2 dark:text-white'>desarollador front end.</p>
           <span>{'</p>'}</span>
         </div>
         <div className='mini:pt-4 lg:pt-8 mini:pl-4 lg:pl-8'>
@@ -39,7 +39,7 @@ const WhoIsMe: React.FC = () => {
       <div className='mini:w-full minsm:w-2/5 relative mini:grid mini:place-content-center'>
         <div
           className='relative mini:w-[170px] mini:h-[170px] lg:w-[400px] lg:h-[400px]
-          minsm:w-[250px] minsm:h-[250px] rounded-full bg-night2 shadow-inner shadow-night-soft rotate'
+          minsm:w-[250px] minsm:h-[250px] rounded-full dark:bg-night2 bg-blue shadow-inner shadow-night-soft rotate'
         >
           <WrapTech
             extraClass='mini:w-10 mini:h-10 lg:w-20 lg:h-20 minsm:w-14 minsm:h-14 absolute top-14

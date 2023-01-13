@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   return (
     <header
       className='flex w-full items-center mini:justify-between lg:justify-around py-5 border-b
-      border-night-light bg-night fixed z-50 mini:px-4'
+      border-night-light dark:bg-night fixed z-50 mini:px-4 bg-light'
     >
       <div>
         <h1
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         showLinks
           ? (
             <Modal>
-              <div className='flex flex-col w-full h-screen bg-night-light justify-center'>
+              <div className='flex flex-col w-full h-screen bg-light dark:bg-night-light justify-center'>
                 <Navbar hidden={false} handleShowBurger={() => { setShowLinks(false) }} />
                 <SocialMedia hidden={false} />
                 <AiFillCloseCircle

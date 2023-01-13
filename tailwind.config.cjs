@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/**/*.{tsx,ts}'],
+  content: ['./src/**/**/*.{tsx,ts}', './index.html'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -17,14 +18,14 @@ module.exports = {
         contact: '#011627',
         inputs: '#011221',
         'input-b': '#1E2D3D',
-        'label': '#607B96',
+        label: '#607B96',
         'input-text': '#465E77',
-        'btn': '#1C2B3A',
-        'wordR': '#C98BDF',
-        'var': '#5565E8',
-        'char': '#607B96',
-        'text': '#FEA55F'
-
+        btn: '#1C2B3A',
+        wordR: '#C98BDF',
+        var: '#5565E8',
+        char: '#607B96',
+        text: '#FEA55F',
+        light: '#FBFBFE'
       },
       backgroundImage: {
         wave: 'url(./src/assets/wave.png)',
