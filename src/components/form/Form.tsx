@@ -15,8 +15,8 @@ const Form: React.FC<FormProps> = ({ handleEvent, form }) => {
   }, [])
 
   return (
-    <div className='mini:w-[90%] mini:mx-auto lg:w-2/5 border border-input-b bg-contact relative'>
-      <div className='w-3/4 absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/4 flex flex-col mini:gap-3 lg:gap-6'>
+    <div className='mini:w-[90%] mini:mx-auto minmd:w-2/5 border border-input-b bg-contact relative'>
+      <div className='w-3/4 minsm:w-3/5 absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/4 flex flex-col mini:gap-3 lg:gap-6'>
         <div className='flex flex-col mini:gap-2 lg:gap-4'>
           <label className='text-label lg:text-base mini:text-sm' htmlFor='name'>_nombre:</label>
           <input

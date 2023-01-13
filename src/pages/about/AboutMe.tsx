@@ -5,7 +5,7 @@ import Portfolio from './portfolio/Portfolio'
 const AboutMe: React.FC = () => {
   return (
     <section className='py-10' id='about'>
-      <h1 className='mb-5 mini:text-base lg:text-6xl'>Acerca de mi</h1>
+      <h1 className='mb-5 mini:text-base minsm:text-lg lg:text-6xl'>Acerca de mi</h1>
       <div className='flex gap-4 mini:flex-col lg:flex-row'>
         <span className='w-14 h-1 bg-orange-light mt-3'></span>
         <p className='mini:w-full lg:w-3/4 mini:text-sm lg:text-lg text-justify'>

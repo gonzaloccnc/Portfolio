@@ -8,7 +8,7 @@ interface CodeProps {
 
 const Code: React.FC<CodeProps> = ({ name, email, message }) => {
   return (
-    <div className='lg:w-9/12 absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/4'>
+    <div className='minsm:w-9/12 mini:w-9/12 absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/4' id='code'>
       <p className='flex flex-col gap-5 w-full overflow-hidden'>
         <span className='text-wordR'>const
           <span className='text-var'>{' button '}

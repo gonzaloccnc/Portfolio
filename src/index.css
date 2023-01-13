@@ -87,7 +87,7 @@ a[href="#mailme"]:hover svg {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 280px) {
   h1 {
     font-size: 1rem;
     font-weight: bold;
@@ -101,5 +101,91 @@ a[href="#mailme"]:hover svg {
   span {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+  #about > h1 {
+    @apply text-xl;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.75;
+  }
+
+  section {
+    padding: 0 0.75rem;
+  }
+
+  span {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  #about > h1 {
+    @apply text-2xl;
+  }
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  section {
+    padding: 0 0.75rem;
+  }
+
+  span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #about > h1 {
+    @apply text-3xl;
+  }
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  section {
+    padding: 0 0.75rem;
+  }
+
+  span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #about > h1 {
+    @apply text-4xl;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  section {
+    padding: 0 2.75rem;
+  }
+
+  span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #about > h1 {
+    @apply text-6xl;
   }
 }

@@ -44,7 +44,9 @@ module.exports = {
         ubuntu: 'Ubuntu Mono',
       },
       screens: {
-        mini: '280px'
+        mini: '280px',
+        minsm: '500px',
+        minmd: '700px'
       }
     },
   },
