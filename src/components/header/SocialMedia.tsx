@@ -1,19 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { MdDarkMode } from 'react-icons/md'
+import { useLocalStorage } from '../../hooks/useLocalStorage'
 interface SocialMediaProps {
   hidden: boolean
 }
 
 const SocialMedia: React.FC<SocialMediaProps> = ({ hidden }) => {
-  const [darkMode, setDarkMode] = useState<boolean>(false)
+  // const [darkMode, setDarkMode] = useState<boolean>(false)
+  const [isDarkMode, setIsDarkMode] = useLocalStorage<boolean>('isDarkMode', false)
   const divDark = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const child = divDark.current?.firstElementChild as HTMLElement
     const html = document.querySelector('html') as HTMLElement
 
-    if (darkMode) {
+    if (isDarkMode) {
       html.classList.add('dark')
       child.classList.remove('-translate-x-0')
       child.classList.add('translate-x-full')
@@ -24,10 +26,10 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ hidden }) => {
       child.classList.remove('translate-x-full')
       child.classList.add('-translate-x-0')
     }
-  }, [darkMode])
+  }, [isDarkMode])
 
   const handleDarkMode: React.MouseEventHandler<HTMLDivElement> = (e) => {
-    setDarkMode(!darkMode)
+    setIsDarkMode(!isDarkMode)
   }
 
   return (
