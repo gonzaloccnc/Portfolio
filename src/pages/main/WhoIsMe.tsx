@@ -33,7 +33,7 @@ const WhoIsMe: React.FC = () => {
           <span>{'</p>'}</span>
         </div>
         <div className='mini:pt-4 lg:pt-8 mini:pl-4 lg:pl-8'>
-          <DownloadButton route='public/cv.pdf'>Descargar CV</DownloadButton>
+          <DownloadButton route='./cv.pdf'>Descargar CV</DownloadButton>
         </div>
       </div>
       <div className='mini:w-full minsm:w-2/5 relative mini:grid mini:place-content-center'>

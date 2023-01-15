@@ -28,11 +28,11 @@ module.exports = {
         light: '#FBFBFE'
       },
       backgroundImage: {
-        wave: 'url(./src/assets/wave.png)',
-        techsed: 'url(./src/assets/techsed.png)',
-        dopamine: 'url(./src/assets/dopamine.png)',
-        api: 'url(./src/assets/api.jpg)',
-        me: 'url(./src/assets/me.png)'
+        wave: 'url(./assets/wave.png)',
+        techsed: 'url(./assets/techsed.png)',
+        dopamine: 'url(./assets/dopamine.png)',
+        api: 'url(./assets/api.jpg)',
+        me: 'url(./assets/me.png)'
       },
       grayscale: {
         500: '0.5',
