@@ -61,7 +61,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ hidden }) => {
         Github
       </a>
       <a
-        href='mailto:gonz.gm.dev@outlook.com?subject=Hola Gonzalo, Tenemos una noticia para ti!!'
+        href='mailto:gonzadevelw@gmail.com?subject=Hola Gonzalo, Tenemos una noticia para ti!!'
         className='py-2 px-2 bg-blue rounded-full hover:bg-blue-soft transition-colors duration-500'
       >
         <AiOutlineMail fill='#000000' />

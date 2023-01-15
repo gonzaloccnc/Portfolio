@@ -31,7 +31,7 @@ const Form: React.FC<FormProps> = ({ handleEvent, form, isValid, defaultValue })
       }
 
       setIsSending(true)
-      emailjs.send('service_y1og978', 'template_fl7grwc', form, '_yPYKIBMBb4_DrvsM')
+      emailjs.send('service_99qcgfd', 'template_fl7grwc', form, '_yPYKIBMBb4_DrvsM')
         .then(() => {
           setSuccessMessage('Correo enviado correctamente.')
         })
