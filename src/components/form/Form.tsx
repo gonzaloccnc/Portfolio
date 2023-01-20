@@ -30,6 +30,11 @@ const Form: React.FC<FormProps> = ({ handleEvent, form, isValid, defaultValue })
         return
       }
 
+      if (!isValid) {
+        setErrorMessage('Email incorrecto')
+        return
+      }
+
       setIsSending(true)
       emailjs.send('service_99qcgfd', 'template_fl7grwc', form, '_yPYKIBMBb4_DrvsM')
         .then(() => {
