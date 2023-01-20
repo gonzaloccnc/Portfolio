@@ -32,7 +32,7 @@ module.exports = {
         techsed: 'url(./assets/techsed.png)',
         dopamine: 'url(./assets/dopamine.png)',
         api: 'url(./assets/api.jpg)',
-        me: 'url(./assets/me.png)'
+        me: 'url(./assets/me.webp)'
       },
       grayscale: {
         500: '0.5',
