@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { MdDarkMode } from 'react-icons/md'
 import { useLocalStorage } from '../../hooks/useLocalStorage'

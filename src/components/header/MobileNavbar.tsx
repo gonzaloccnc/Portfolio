@@ -1,22 +1,29 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 
-const MobileNavbar: React.FC = () => {
-  const effectScroll = (): void => { }
+interface MobileNavbarProps {
+  mobileIsActive: boolean
+  handleClick: MouseEventHandler<HTMLAnchorElement>
+}
 
+const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileIsActive, handleClick }) => {
   return (
-    <nav className='flex flex-col items-center gap-4 text-base w-full' id='mobile-nav'>
+    <nav
+      className={`${mobileIsActive ? 'active' : ''} flex flex-col items-center gap-4 
+      text-base w-full`}
+      id='mobile-nav'
+    >
       <a
         className='hover:text-blue-soft transition-all active w-full text-center'
-        href='#home' onClick={effectScroll}>Inicio</a>
+        href='#home' onClick={handleClick}>Inicio</a>
       <a
         className='hover:text-blue-soft transition-all w-full text-center'
-        href='#about' onClick={effectScroll}>Acerca de</a>
+        href='#about' onClick={handleClick}>Acerca de</a>
       <a
         className='hover:text-blue-soft transition-all w-full text-center'
-        href='#portafolio' onClick={effectScroll}>Portafolio</a>
+        href='#portafolio' onClick={handleClick}>Portafolio</a>
       <a
         className='hover:text-blue-soft transition-all w-full text-center'
-        href='#contact' onClick={effectScroll}>Contacto</a>
+        href='#contact' onClick={handleClick}>Contacto</a>
     </nav>
   )
 }
